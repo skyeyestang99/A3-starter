@@ -9,8 +9,6 @@
 int main(int argc, char *argv[]) {
     /* Local Variables */
     
-    /* insert your getopt loop here... */
-
     /* save the other cli args */
 
     /* process the input as described in the writeup */
