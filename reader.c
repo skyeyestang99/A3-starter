@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
 
 	/* Format string for output to be printed when -c option is given
 
-	   printf("Number of lines: %d\n "
+	   printf("Number of lines: %d\n"
 	   "Longest field: %d characters\n",
 	   insert your variable names here);
 	*/
