@@ -47,22 +47,19 @@ int main(int argc, char* argv[]) {
 	int i = 0;
 	int l = 0;
 	int prev=0;
-	int current=0;
-	int longest;
+	int longest=0;
 	while(getline(&readbuffer,&fieldCharacter,stdin)!=-1){ 
+		int current=0;
 		while(readbuffer[l] != '\0'){
-			prev = current;
+			prev = l;
 			buf[i]=&readbuffer[l];
 			l++;
 			while(readbuffer[l]!=' ' &readbuffer[l]!='\n'&readbuffer[l]!='\t'){
 			l++;
 			}
-			current = l - prev;
-			if(current < prev){
-				longest = prev;
-			}
-			else{
-				longest = current;
+			current = l;
+			if(current-prev > longest){
+				longest = current-prev;
 			}
 			readbuffer[l]='\0';
 			l++;
