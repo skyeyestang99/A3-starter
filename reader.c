@@ -54,7 +54,7 @@ int main(int argc, char* argv[]) {
 			prev = l;
 			buf[i]=&readbuffer[l];
 			l++;
-			while(readbuffer[l]!=' ' &readbuffer[l]!='\n'&readbuffer[l]!='\t'){
+			while((readbuffer[l]!=' ' )&(readbuffer[l]!='\n')&(readbuffer[l]!='\t')){
 			l++;
 			}
 			current = l;
