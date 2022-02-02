@@ -96,9 +96,11 @@ int main(int argc, char* argv[]) {
 		l = 0;
 		i = 0;	
 	}
+	if(length == argc-3){
 		printf("Number of lines: %d\n"
 		"Longest field: %d characters\n",
 		lines,longest);
+	}
 	free(buf);
 	free(obuf);
 	return 0;
