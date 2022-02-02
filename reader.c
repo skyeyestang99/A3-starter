@@ -100,5 +100,6 @@ int main(int argc, char* argv[]) {
 	}
 	free(buf);
 	free(obuf);
+	free(readbuffer);
 	return 0;
 }
